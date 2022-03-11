@@ -1,0 +1,65 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body, html {
+    height: 100%;
+}
+
+  /* Navbar */
+  .navbar-brand img.logo{
+    width: 250px;
+    height: auto;
+  }
+
+ .navbar.fixed-top.bg-light{
+      background-color: transparent!important;
+
+  } 
+
+.navbar-toggler {
+    color: rgba(0,0,0,.55);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+.container-hero-image{
+    height: 100%;
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/foto_membri.jpeg");
+
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container-title{
+    margin-bottom: 48px;
+    margin-top:72px;
+}
+
+.container-title h1{
+    color: red;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.container.container-text{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom:48px
+}
+

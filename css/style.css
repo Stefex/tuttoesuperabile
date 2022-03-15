@@ -5,6 +5,7 @@
 
   body, html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 p{
@@ -107,7 +108,6 @@ p{
     width: 100%;
     height: 500px;
     margin-top:40px;
-    margin-bottom:40px
   }
 
   .swiper-slide {
@@ -178,5 +178,14 @@ p{
   
   .swiper-button-prev::after {
     display: none;
+  }
+
+  .container-tributi-img{
+      width:100%;
+      height:400px;
+      background-position: center;
+      background-size: cover;
+      background-image: url('../img/citta_di_davide.png');
+      margin-bottom:40px
   }
 

@@ -14,18 +14,19 @@
     <!-- CSS Bootstrap -->
     <link  rel="stylesheet" href="css/bootstrap.min.css">
 
+    <link  rel="stylesheet" href="css/swiper-bundle.min.css">
+
     <!-- Custom CSS -->
     <link  rel="stylesheet" href="css/style.css">
 
     <link href="font/fontawesome/css/all.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
@@ -40,33 +41,134 @@
               <a class="nav-link" href="#">Come aiutarci</a>
               <a class="nav-link" href="#">Come contattarci</a>
               
-              <a class="nav-link"> <i class="fa-brands fa-facebook-square"></i></a>
+              <a class="nav-link nav-logo"> <i class="fa-brands fa-facebook-square"></i></a>
             </div>
           </div>
         </div>
       </nav>
+
+
       <div class="container-hero-image">
         <div class="hero-image"></div>
       </div>
-      <div class="container-title">
-          <h1>Chi siamo</h1>
+      <div class="container container-title">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Chi siamo</h1>
+          </div>
+        </div>    
       </div>
 
       <div class="container container-text">
-          <p class="text-description">
-        Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip 
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit i
-            n voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-            qui officia deserunt mollit anim id est laborum
-          </p>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-description">
+              Il gruppo super-abile nasce dalla “settimana della disabilità” 
+              svoltasi ad Uboldo (VA) nel 2010. L’Associazione “Tutto è super-abile” 
+              è nata nel novembre 2011. Siamo un gruppo di genitori e ragazzi che 
+              vivono una realtà che barriere architettoniche e culturali rendono a 
+              volte difficile. Vogliamo aiutare tutti coloro che, come noi, lottano 
+              per abbattere queste barriere e, a volte non sanno cosa fare. 
+              Noi mettiamo a loro disposizione le nostre esperienze, maturate 
+              “sul campo” e desideriamo aiutare i genitori ed i familiari a 
+              comprendere che isolarsi non serve ai nostri ragazzi, che invece 
+              hanno molto da dare e da ricevere e desiderano dire al mondo:”Ci 
+              sono anch’io!” Non sentitevi soli, perché siamo in tanti e insieme 
+              possiamo aiutarci ad uscire dall’ombra.
+                </p>
+          </div>
+        </div>  
       </div>
-      
-      <script type="text/javascript"  src="js/bootstrap.bundle.min.js" ></script>
 
+      <div class="container container-title">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>COSA OFFRIAMO</h1>
+          </div>
+        </div>    
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="img/cosaoffriamo/dastaconpiti.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dasta conpiti</h5>
+                <p class="card-text">Aiuto allo studio rivolto a studenti di elementari e medie con Disturbo Specifico dell'Apprendimento in presenza di volontari formati; ogni sabato mattina dalle ore 9.30 alle ore 12.00 presso la nostra sede.</p>
+                <!-- <a href="#" class="btn btn-primary">Sopri di più</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <img src="img/cosaoffriamo/sportello.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sportello d'ascolto per genitori e ragazzi</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- <a href="#" class="btn btn-primary">Scopri di più &nbsp; &nbsp;<i class="fa-solid fa-arrow-right"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="container-fluid swiper-cosaoffriamo-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="swiper cosaoffriamo">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" ">
+                  <img class="img-gallery-cosaoffriamo" src="img/cosaoffriamo/gallery/compiti2.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-gallery-cosaoffriamo" src="img/cosaoffriamo/gallery/compiti3.jpg">
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      
+    <script type="text/javascript"  src="js/swiper-bundle.min.js" ></script>
+
+    <script type="text/javascript">
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});</script>
+
+    <script type="text/javascript"  src="js/bootstrap.bundle.min.js" ></script>
     <script type="text/javascript" href="js/custom.js"></script>
 </body>
 </html>

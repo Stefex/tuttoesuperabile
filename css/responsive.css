@@ -49,8 +49,20 @@
         margin-top:2px;
     }
 
-    .hero-image{
-        background-size: contain;
+    .swiper.cosaoffriamo{
+        height:300px
+    }
+
+    .container-tributi-img{
+        height:300px
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        padding:22px
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        padding:22px
     }
   
 }

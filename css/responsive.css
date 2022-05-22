@@ -71,5 +71,14 @@
         padding-lefT:35px;
         padding-right:35px
     }
+
+    .container.container-text .text-description{
+        font-size:14px;
+        line-height: 26px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: justify;
+
+    }
   
 }

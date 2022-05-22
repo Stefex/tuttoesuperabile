@@ -1,0 +1,52 @@
+@media all and (max-width: 480px) { 
+    .card.cosaoffriamo-card{
+        margin-bottom:30px
+    }
+
+    .card.card-iniziativa{
+        margin-bottom:30px
+    }
+
+    .phone{
+        margin-left:35%
+    }
+
+    .clock{
+        margin-left:37%
+    }
+
+    .container-mail{
+        padding-top:20px;
+        height:auto;
+        margin-bottom:0px;
+    }
+
+    .button-mail-container a{
+        margin-top:20px;
+        margin-bottom:20px
+    }
+
+    .text-mail-container{
+        text-align: center;
+    }
+
+    .container-hero-image{
+        height: 40%;
+    }
+
+    .navbar-light .navbar-toggler{
+        color: transparent;
+        border-color:#ffffff
+    }
+
+    .navbar-light .navbar-toggler-icon.icon-menu {
+        background-image: none;
+    }
+
+    .navbar-light .navbar-toggler-icon.icon-menu i{
+        color:#ffffff;
+        font-size:28px;
+        margin-top:2px;
+    }
+  
+}

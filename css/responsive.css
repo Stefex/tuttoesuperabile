@@ -16,9 +16,10 @@
     }
 
     .container-mail{
-        padding-top:20px;
+        padding-top:50px;
         height:auto;
         margin-bottom:0px;
+        padding-bottom:30px
     }
 
     .button-mail-container a{
@@ -28,6 +29,7 @@
 
     .text-mail-container{
         text-align: center;
+        line-height: 2em;
     }
 
     .container-hero-image{

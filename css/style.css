@@ -3,10 +3,14 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+
   body, html {
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+
 
 p{
     font-family: 'Open Sans', sans-serif;
@@ -24,8 +28,16 @@ p{
     font-size: 19px;
 }
 
+.nav-link.nav-logo.nav-facebook:hover{
+color: rgb(3, 82, 131);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: rgb(2, 114, 250);
+}
+
  .navbar.fixed-top.bg-light{
-      background-color: rgba(0, 0, 0, 0.1)!important;
+      background-color: rgba(0, 0, 0, 0.7)!important;
 
   } 
 
@@ -58,7 +70,6 @@ p{
 
 .container-title{
     margin-bottom: 48px;
-    margin-top:72px;
 }
 
 .container-title h1{
@@ -69,6 +80,7 @@ p{
     font-size:42px;
     font-weight: 400;
     letter-spacing: 0.01em;
+    margin-top:80px;
 }
 
 .container.container-text{
@@ -90,6 +102,8 @@ p{
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     color: #000 ;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .card .btn-primary{
@@ -102,6 +116,14 @@ p{
     padding:30px;
     padding-top:20px;
     padding-bottom:20px
+}
+
+.card-img, .card-img-top{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-color: transparent;
+  border:0;
+  height:270px
 }
 
 .swiper.cosaoffriamo {
@@ -130,11 +152,22 @@ p{
     align-items: center;
   }
 
+  .swiper-slide:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45));
+  }
+
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+
   }
 
   .container-fluid.swiper-cosaoffriamo-container{
@@ -185,7 +218,397 @@ p{
       height:400px;
       background-position: center;
       background-size: cover;
-      background-image: url('../img/citta_di_davide.png');
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/tributi/citta_di_davide.png');
       margin-bottom:40px
   }
 
+  .swiper.iniziative {
+    width: 100%;
+    height: 500px;
+    margin-top:40px;
+  }
+
+  .container-fluid.swiper-iniziative-container{
+    padding:0;
+    margin-bottom:200px
+}
+
+.swiper-slide img.img-gallery-iniziative{
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.swiper-slide .card.card-iniziative img.card-img-top-iniziative{
+  width:100%;
+  padding-bottom:50px
+}
+
+
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  animation: heartbeat 1.5s infinite;
+  margin:0 auto;
+
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-color:#c33;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+     -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+       -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+     -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+       -o-transform-origin: 100% 100%;
+          transform-origin :100% 100%;
+}
+
+
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.text-donazioni p{
+  text-align: center;
+  padding-top:15px
+}
+
+.text-donazioni-cinque p{
+  padding-top:0px
+}
+
+.text-mappa p{
+  text-align: center;
+  padding-top:0px
+}
+
+
+.text-donazioni p span{
+  font-weight: bold;
+}
+
+.text-donazioni-cinque p span{
+  font-weight: bold;
+}
+
+.text-mappa p span{
+  font-weight: bold;
+}
+
+.text-contatti-tel p{
+  text-align: center;
+  padding-top:0px;
+  line-height: 2em;
+}
+
+.text-contatti-tel p span{
+  font-weight: bold;
+}
+
+
+#wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  font-size:5.2em;
+  margin-left:-40px;
+  margin-bottom:0px
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.cinquepermille-container{
+  text-align: center;
+}
+
+
+.marker {
+	position:relative;
+  text-align: center;
+	padding-bottom:15px
+}
+
+.marker svg {
+	fill: red;
+	position: relative;
+	animation: markerBounce 2s infinite;
+}
+
+.marker::after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 17px;
+	border-radius: 50%;
+	background-color: #212121;
+	bottom: -2px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-shadow: 0 2px 2px 2px #212121;
+	animation: shadowShrink 2s infinite;
+}
+
+@keyframes markerBounce {
+	50% {
+		transform: translateY(-10%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes shadowShrink {
+	50% {
+		transform: translateX(-50%) scale(.8);
+		opacity: .8;
+	}
+	100% {
+		transform: translateX(-50%) scale(1);
+		opacity: 1;
+	}
+}
+
+.map{
+  padding-bottom:25px
+}
+
+.tel-container{
+  text-align: center;
+}
+
+.phone {
+  width: 120px;
+  height: 120px;
+  -webkit-animation:ring 10s infinite;
+  -webkit-animation-iteration-count:infinite;
+  padding-bottom: 20px;
+  margin-left:40%;
+  color: #010137;
+}
+
+.phone:before {
+  font-family: FontAwesome;
+  content: "\f095";
+  font-size:5em;
+}
+
+@-webkit-keyframes ring{
+0% {
+}
+10% {
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -o-transform:rotate(5deg); 
+}
+20% {
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);       
+}
+30% {
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -o-transform:rotate(5deg);       
+}
+ 40% {
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);       
+}
+50% {
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -o-transform:rotate(5deg);       
+}
+ 60% {
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);       
+}
+70% {
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -o-transform:rotate(5deg);       
+}
+80% {
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);       
+}
+90% {
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  -o-transform:rotate(5deg);       
+}
+ 100% {
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);       
+}
+}
+
+
+.clock {
+  border: 4px solid #000;
+  border-radius: 50%;
+  height: 100px;
+  position: relative;
+  width: 100px;
+  margin-lefT:41%;
+ margin-bottom:20px
+}
+
+.sec, .min, .hour {
+  background-color: #000;
+  border-radius: 5px;
+  position: absolute;
+  transform-origin: bottom;
+}
+
+.hour {
+  animation: rot 720s linear forwards infinite;
+  height: 30%;
+  left: calc(50% - 2px);
+  top: 20%;
+  width: 3px;
+}
+
+.min {
+  animation: rot 60s linear forwards infinite;
+  height: 40%;
+  left: calc(50% - 2px);
+  top: 10%;
+  width: 3px;
+}
+
+.sec {
+  animation: rot 40s linear forwards infinite;
+  background-color: #f00;
+  height: 50%;
+  left: calc(50% - 1px);
+  top: 5%;
+  transform-origin: 1px 90%;
+  width: 1px;
+}
+
+.dot {
+  background-color: #000;
+  border-radius: 50%;
+  height: 7px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.img-consiglio{
+  text-align: center;
+  margin-top:30px;
+  padding-bottom: 10px;
+}
+
+.clock-container{
+  margin-top:30px
+}
+
+.container-mail{
+  height:150px;
+  background-color: rgb(0, 0, 91);
+ padding-top:65px;
+ margin-top:60px
+}
+
+.text-mail-container{
+  color:#ffffff;
+  text-align: right;
+}
+
+.button-mail-container{
+  text-align:right;
+}
+
+.button-mail-container a{
+  text-align: center;
+  width:100%;
+  margin-top:-20px;
+  border-radius: 10px;
+}
+
+
+.button-mail-container a svg{
+ margin-left:20px
+}

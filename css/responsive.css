@@ -48,5 +48,9 @@
         font-size:28px;
         margin-top:2px;
     }
+
+    .hero-image{
+        background-size: contain;
+    }
   
 }

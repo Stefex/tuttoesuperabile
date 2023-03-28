@@ -14,8 +14,8 @@
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #000 ;
+    font-weight: 400;
+    color: #000045;
 }
 
   /* Navbar */
@@ -33,11 +33,11 @@ color: rgb(3, 82, 131);
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-  color: rgb(2, 114, 250);
+  color: rgb(92, 92, 92);
 }
 
  .navbar.fixed-top.bg-light{
-  background-color: rgb(23, 23, 23)!important;
+  background-color: #ffffff!important;
 
   } 
 
@@ -48,7 +48,8 @@ color: rgb(3, 82, 131);
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    color: #fff;
+    color: #000045;
+
 }
 
 .container-hero-image{
@@ -66,6 +67,7 @@ color: rgb(3, 82, 131);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .container-title{
@@ -73,23 +75,25 @@ color: rgb(3, 82, 131);
 }
 
 .container-title h1{
-    color: #2F2F2F;
+    color: #000045;
     text-align:center;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size:42px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.01em;
     margin-top:80px;
 }
 
 .container.container-text{
     text-align: center;
+    margin-top:40px
 }
 
 .container.container-text .text-description{
     font-size:18px;
     line-height: 34px;
+    /* margin-top:60px; */
 }
 
 .card{
@@ -101,7 +105,7 @@ color: rgb(3, 82, 131);
 .card-title{
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
-    color: #000 ;
+    color: #000045;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -109,7 +113,26 @@ color: rgb(3, 82, 131);
 .card .btn-primary{
     width:100%;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
+    background-color: #00006c;
+    border-radius: 10px;
+    transition:0.5s;
+    font-size:0.92rem
+}
+
+.card .btn-primary:hover{
+  background-color: #00009d;
+  transition:0.5s
+}
+
+.card .btn-primary:hover > .fa-solid.fa-arrow-right{
+  margin-left:5px; 
+  transition: 1s;
+  transition: 0.5s;
+}
+
+.fa-solid.fa-arrow-right{
+  transition: 0.5s;
 }
 
 .card-body{
@@ -219,7 +242,6 @@ color: rgb(3, 82, 131);
       background-position: center;
       background-size: cover;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/tributi/citta_di_davide.png');
-      margin-bottom:40px
   }
 
   .swiper.iniziative {

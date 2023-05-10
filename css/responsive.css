@@ -91,5 +91,9 @@
     .hero-image{
         margin-top:50px
     }
+
+    .container-lightbox .row{
+        margin-bottom: 0px;
+      }
   
 }

@@ -671,7 +671,7 @@ i.fa-brands.fa-facebook-square:hover{
 .img-lightbox-1{
   width: 100%;
   height: 20rem;
-  background-image: url(../img/cosaoffriamo/gallery/compiti2.jpg);
+  background-image: url(../img/cosaoffriamo/gallery_divertiamici/divertiamici_1.jpg);
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
@@ -680,7 +680,7 @@ i.fa-brands.fa-facebook-square:hover{
 .img-lightbox-2{
   width: 100%;
   height: 20rem;
-  background-image: url(../img/cosaoffriamo/gallery/compiti3.jpg);
+  background-image: url(../img/cosaoffriamo/gallery_divertiamici/divertiamici_2.jpg);
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
@@ -689,8 +689,111 @@ i.fa-brands.fa-facebook-square:hover{
 .img-lightbox-3{
   width: 100%;
   height:20rem;
-  background-image: url(../img/cosaoffriamo/gallery/compiti2.jpg);
+  background-image: url(../img/cosaoffriamo/gallery_divertiamici/divertiamici_3.jpg);
   background-repeat: no-repeat;
   display: inline-block;
   background-size: cover;
 }
+
+.img-lightbox-collaborazioni-1{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../img/cosaoffriamo/gallery_collaborazioni/collaborazione_1.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-collaborazioni-2{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../img/cosaoffriamo/gallery_collaborazioni/collaborazione_2.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-collaborazioni-3{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_collaborazioni/collaborazione_3.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-collaborazioni-4{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_collaborazioni/collaborazione_4.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+
+
+.img-lightbox-dastaconpiti-1{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_dastaconpiti/dastaconpiti_1.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-dastaconpiti-2{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_dastaconpiti/dastaconpiti_2.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-bomboniere-1{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_bomboniere/bomboniere_1.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-bomboniere-2{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_bomboniere/bomboniere_2.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-mercatini-1{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_mercatini/mercatini_1.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+.img-lightbox-mercatini-2{
+  width: 100%;
+  height:20rem;
+  background-image: url(../img/cosaoffriamo/gallery_mercatini/mercatini_2.jpeg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: cover;
+}
+
+
+.button-facebook-footer{
+ width:100%
+}
+
+.container-facebook-footer{
+  padding-bottom:40px;
+  background-color: rgb(0, 0, 91);
+}
+
